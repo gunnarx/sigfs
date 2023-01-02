@@ -11,14 +11,14 @@ HDR=../log.h
 #
 SIGFS_PUBLISH_SRC=sigfs_publish.cc ../log.cc
 SIGFS_PUBLISH_OBJ=${patsubst %.cc, %.o, ${SIGFS_PUBLISH_SRC}}
-SIGFS_PUBLISH=sigfs_publish
+SIGFS_PUBLISH=sigfs-publish
 
 #
 # Signal subscribe
 #
 SIGFS_SUBSCRIBE_SRC=sigfs_subscribe.cc ../log.cc
 SIGFS_SUBSCRIBE_OBJ=${patsubst %.cc, %.o, ${SIGFS_SUBSCRIBE_SRC}}
-SIGFS_SUBSCRIBE=sigfs_subscribe
+SIGFS_SUBSCRIBE=sigfs-subscribe
 
 DESTDIR ?= /usr/local
 export DESTDIR
